@@ -19,7 +19,7 @@
 
     <header id="fondoHeader">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
             <div class="container-fluid px-4">
                 <a class="navbar-brand fw-bold" href="index.html">
                     <img src="./assets/imagenes/Logo_LD.png" alt="Logo sticker" class="logo-nav">
@@ -32,14 +32,12 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
             
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav mx-auto">
                                 <li class="nav-item"><a class="nav-link active" href="#">INICIO</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./pages/stickers.html">STICKERS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./pages/categorias.html">CATEGORIAS</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./pages/preguntas_frecuentes.html">FAQ</a></li>
-                             <li class="nav-item"> <a class="nav-link" href="./pages/carrito.html"> CARRITO <span id="contador-carrito" class="badge rounded-pill bg-danger">0</span>
-    </a>
-</li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/carrito.html">CARRITO</a></li> 
                         </ul>
                     </div>
             </div>
@@ -56,15 +54,76 @@
                 <a href="./pages/stickers.html" class="btn btn-dark btn-lg px-5 py-3">VER CATÁLOGO</a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="./assets/imagenes/Chill_de_cojones-removebg-preview.png" alt="Sticker Chill" class="img-fluid floating-sticker">
+                <img src="./assets/imagenes/Chill_de_cojones-removebg-preview.png" alt="Sticker Chill" class="img-fluid animacion-flotar">
             </div>
         </div> 
 
-     <section class="mt-5 pt-5">
-       <h2 class="text-center fw-bold mb-5">LO MAS VENDIDO</h2>
-       <div id="contenedor-catalogo" class="row g-4"></div>
-    </section>
+<section class="container my-5">
+    <h2 class="text-center mb-4">LO MÁS VENDIDO</h2>
+
+    <div class="contenedor-carrusel"> 
+        <div id="carouselMasVendido" class="carousel slide" data-bs-ride="carousel">
             
+            <div class="carousel-indicators puntos-navegacion">
+                <button type="button" data-bs-target="#carouselMasVendido" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMasVendido" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMasVendido" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselMasVendido" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselMasVendido" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/imagenes/patito_cuchillo-removebg-preview.png" class="d-block mx-auto img-fluid" alt="Sticker Patito">
+                    
+                    <div class="carousel-caption">
+                        <h5>Patito Guerrero</h5>
+                        <p>El sticker más picante de la colección.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/imagenes/Chill_de_cojones-removebg-preview.png" class="d-block mx-auto img-fluid" alt="Sticker Chill">
+                    
+                    <div class="carousel-caption">
+                        <h5>Modo Chill</h5>
+                        <p>Para los que se toman la vida con calma.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagenes/tortuga-ninja.png" class="d-block mx-auto img-fluid" alt="Sticker Chill">
+                    
+                    <div class="carousel-caption">
+                        <h5>Donatello</h5>
+                        <p>El sticker ideal para los amantes de la pizza y la acción.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagenes/digimon1.png" class="d-block mx-auto img-fluid" alt="Sticker Chill">
+                    
+                    <div class="carousel-caption">
+                        <h5>Gatomon</h5>
+                        <p>Llevá tu compañero digital a todos lados.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imagenes/chicago-bulls.png" class="d-block mx-auto img-fluid" alt="Sticker Chill">
+                    
+                    <div class="carousel-caption">
+                        <h5>Chicago Bulls</h5>
+                        <p>El clasico de Chicago</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMasVendido" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMasVendido" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div> 
+</section>
           
     </main>
     <footer class="bg-dark text-white text-center py-4">
@@ -73,7 +132,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
 
 </body>
 
