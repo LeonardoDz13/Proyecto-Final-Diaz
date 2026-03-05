@@ -2,73 +2,215 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers - Catálogo</title>
 
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 
-<body>
     
-    </head id="fondoHeader">
+</head>
 
+<body class="d-flex flex-column min-vh-100">
+
+    <header id="fondoHeader">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-                <div class="container-fluid px-4">
-                    <a class="navbar-brand fw-bold" href="index.html">
-                        <img src="../assets/imagenes/Logo_LD.png" alt="Logo sticker" class="logo-nav">
-                        
-                    </a>
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img src="../assets/imagenes/Logo_LD.png" alt="Logo sticker" class="logo-nav">
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-                        <span class="navbar-toggler-icon"></span> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                
-                            <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item"><a class="nav-link active" href="../index.html">INICIO</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">STICKERS</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="../pages/categorias.html">CATEGORIAS</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="../pages/preguntas_frecuentes.html">FAQ</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="../pages/carrito.html">CARRITO</a></li> 
-                            </ul>
-                        </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">STICKERS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./categorias.html">CATEGORIAS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./preguntas_frecuentes.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./carrito.html">CARRITO</a></li>
+                    </ul>
                 </div>
+            </div>
         </nav>
     </header>
-    <main class="container my-5">
-        <div class="row align-items-center min-vh-75">
 
-            <div class="col-md-6 mb-4 text-start">
-                
-                <h1 class="display-5 fw-bold mb-4"> STICKERS </h1>
+    <main class="container my-5 flex-grow-1">
+        <section class="text-center mb-5">
+            <h1 class="display-4 fw-bold">NUESTRO <span class="text-primary">CATÁLOGO</span></h1>
+            <p class="lead">Elegí los mejores diseños para personalizar tus cosas.</p>
+        </section>
 
-            </div>   
-        </div> 
-
-        <section class="mt-5 pt-5">
-             <h2 class="text-center fw-bold mb-5">STICKERS</h2>
-             <div class="row g-4">
-                <div class="col-6 col-md-4">
-                    <div class="card border-0 shadow-sm h-100 card-sticker">
-                    <img src="../assets/imagenes/basket_mano_+_pelota-removebg-preview.png" class="card-img-top p-4" alt="sticker 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">BASKET </h5>
+        <section class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/basket_mano_+_pelota-removebg-preview.png" class="card-img-top p-4" alt="Sticker Basket">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">BASKET</h5>
                         <p class="card-text text-muted">$1500</p>
-                        <button class="btn btn-outline-dark btn-sm rounded-pill">Añadir al carrito</button>
-                    </div>       
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/patito_cuchillo-removebg-preview.png" class="card-img-top p-4" alt="Sticker Patito">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">PATITO GUERRERO</h5>
+                        <p class="card-text text-muted">$1200</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/Chill_de_cojones-removebg-preview.png" class="card-img-top p-4" alt="Sticker Chill">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">MODO CHILL</h5>
+                        <p class="card-text text-muted">$1300</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/tortuga-ninja.png" class="card-img-top p-4" alt="Sticker Tortuga">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">DONATELLO</h5>
+                        <p class="card-text text-muted">$1500</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/digimon1.png" class="card-img-top p-4" alt="Sticker Gatomon">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">GATOMON</h5>
+                        <p class="card-text text-muted">$1400</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/chicago-bulls.png" class="card-img-top p-4" alt="Sticker Bulls">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">CHICAGO BULLS</h5>
+                        <p class="card-text text-muted">$1600</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+           <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/buho-arte.png" class="card-img-top p-4" alt="Sticker Buho">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">BUHO ARTE</h5>
+                        <p class="card-text text-muted">$1500</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/cuphead.png" class="card-img-top p-4" alt="Sticker Cuphead">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">CUPHEAD</h5>
+                        <p class="card-text text-muted">$1700</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/doge-cabeza.png" class="card-img-top p-4" alt="Sticker Doge">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">DOGE CABEZA</h5>
+                        <p class="card-text text-muted">$1300</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/goku.png" class="card-img-top p-4" alt="Sticker Goku">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">GOKU</h5>
+                        <p class="card-text text-muted">$4300</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/hp.png" class="card-img-top p-4" alt="Sticker HP">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">HARRY POTTER</h5>
+                        <p class="card-text text-muted">$1200</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 card-sticker">
+                    <img src="../assets/imagenes/mario.png" class="card-img-top p-4" alt="Sticker Mario">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="card-title fw-bold">MARIO</h5>
+                        <p class="card-text text-muted">$1600</p>
+                        <button class="btn btn-dark btn-sm rounded-pill mt-auto">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
     </main>
-     <footer class="bg-dark text-white text-center py-4 mt-5">
+
+    <footer class="bg-dark text-white text-center py-4">
         <p class="mb-0"> &copy; 2026 Leonardo Diaz - Coderhouse</p>
     </footer>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

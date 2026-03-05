@@ -1,0 +1,60 @@
+@use '../utilities/variables'as *;
+@use '../utilities/mixins' as *;
+
+
+// Estilo para el header
+#fondoHeader {
+    background-color:$color-logo;
+
+    // ----------Diseño para mobile (Mobile fist)----------
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column; // Aplicar diseño en columna para mobile
+        align-items: center; // Centrar los enlaces horizontalmente
+        gap: 15px; // Espacio entre los enlaces
+        padding: 1rem 0; // Espacio vertical para mobile
+    }
+
+    //Efectos para el logo
+    .logo-nav {
+       max-width: 7rem; 
+        height: auto;
+        transition: transform 0.3s ease;
+        vertical-align: middle;;
+        
+
+        // efecto de escala al pasar el mouse por el logo
+        &:hover { 
+            transform: scale(1.1);
+        }
+    }
+
+
+    // ----------Diseño para desktop ----------
+    @include breakpoint('desktop') {
+        .navbar-nav{
+           flex-direction: row; // Aplica diseño fila
+
+            justify-content: center; 
+
+            padding: 0;
+
+            gap: 5px; 
+        }
+    }
+.nav-link{
+    font-family:$fuente-principal !important;  
+    font-size: 1.2rem !important;
+    font-weight: 1000!important;
+    letter-spacing: 1px!important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+//Cambio de color al pasar el mouse por los enlaces del menú
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color:$color-acento;
+        @include transicion-estandar;
+    }
+}
