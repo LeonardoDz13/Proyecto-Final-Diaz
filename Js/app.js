@@ -15,7 +15,7 @@ const pedirProductos = async () => {
     const rutas =[
 
         '../data/productos.json',
-        '/Proyecto-Final-Diaz/data/productos.json'
+       
     ];
 
     for (const ruta of rutas) {
