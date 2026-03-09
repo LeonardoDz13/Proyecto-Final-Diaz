@@ -14,7 +14,7 @@ const categoriaURL = queryParams.get('categoria');
 const pedirProductos = async () => {
     const rutas =[
 
-        '../data/productos.json',
+        '../Data/productos.json',
        
     ];
 
